@@ -20,10 +20,9 @@ body {
 }
 
 .wrapper {
-    /* position: absolute; */
-    /* width: 100%;  */
+    position: relative;
+    /* width: 100vw; */
     min-height: 100vh;
-    left: 0px;
     display: flex;
     top: 0;
     background: var(--light-blue-color);
@@ -34,7 +33,7 @@ body {
 
 
 .wrapper>img {
-    width: 800px;
+    width: 850px;
     height: 745px;
     border-radius: 60px 0 0 60px;
     flex: 1;
@@ -79,7 +78,7 @@ left: 1103px; */
 
 .welcome-card {
     border: 1px solid #1394DD;
-    width: 500px;
+    width: 450px;
     border-radius: 20px;
 }
 
@@ -111,7 +110,8 @@ left: 1103px; */
     padding: 50px;
 
 }
-.input-feild input:focus{
+
+.input-feild input:focus {
     outline: none;
 }
 
@@ -209,7 +209,7 @@ form .password-btn {
     position: absolute;
     /* justify-content: space-between; */
     align-items: center;
-    width: 99%;
+    width: 100%;
     height: 80px;
     background: #D3EEFE;
     border-radius: 60px 60px 0 0px;
@@ -239,13 +239,14 @@ form .password-btn {
     gap: 50px;
     position: absolute;
     /* width: 350px; */
-    left: 850px;
+    left: 60%;
     height: 40px;
     background: #FFFFFF;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.06);
     border-radius: 60px;
 }
-.topbar form>input:focus{
+
+.topbar form>input:focus {
     outline: none;
 }
 
@@ -259,7 +260,8 @@ form .password-btn {
     height: 30px;
     width: 200px;
 }
-.topbar form >button{
+
+.topbar form>button {
     background: none;
     border: none;
     color: #00C2FF;
@@ -278,4 +280,75 @@ form .password-btn {
 .rightsidebar>img {
     border-radius: 0 60px 60px 0;
     width: 250px;
+    height: 750px;
+}
+
+.left-sidebar {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    height: 100vh;
+    width: 130px;
+    gap: 15px;
+}
+
+.left-sidebar .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 19px;
+    width: 70px;
+    height: 80px;
+    font-size: 10px;
+    background: #F3FBFF;
+    gap: 5px;
+    /* icon */
+
+    box-shadow: 11px 7px 13px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    color: #1394DD;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.left-sidebar .icons:hover{
+    background: #C6E8FB;
+}
+
+
+
+.Data {
+    flex: 1;
+    /* take up remaining horizontal space */
+    margin: 0 20px;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding: 20px;
+    left: 130px;
+    /* margin-left: 8%; */
+}
+
+.Data p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 60px 40px;
+    background: #6FC6F8;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 25px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #FFFFFF;
 }
